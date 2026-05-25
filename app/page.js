@@ -40,7 +40,14 @@ export default function Home() {
             >
               LinkedIn
             </a>
-
+<a
+  href="/Craig-Gordon-Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+>
+  View Resume
+</a>
             <a
               href="mailto:Craig.James.Gordon13@gmail.com"
               className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold transition hover:border-purple-400 hover:bg-slate-800"
@@ -113,12 +120,13 @@ export default function Home() {
             accent="cyan"
           />
 
-          <ProjectCard
-            title="Career Guidance App"
-            description="A career exploration tool that helps users compare options, identify strengths, and generate realistic next steps."
-            status="In Development"
-            accent="purple"
-          />
+        <ProjectCard
+  title="Career Guidance App"
+  description="A live AI career exploration tool that helps users compare paths, clarify goals, and generate realistic next steps."
+  status="Live App"
+  accent="purple"
+  link="https://career-guidance-app-rouge.vercel.app/"
+/>
 
           <ProjectCard
             title="Teaching Materials Store"
@@ -183,8 +191,7 @@ export default function Home() {
   );
 }
 
-function ProjectCard({ title, description, status, accent }) {
-  const accentStyles = {
+function ProjectCard({ title, description, status, accent, link }) {  const accentStyles = {
     cyan: "from-cyan-400/20 to-blue-500/10 border-cyan-400/30 text-cyan-300",
     purple: "from-purple-400/20 to-fuchsia-500/10 border-purple-400/30 text-purple-300",
     emerald: "from-emerald-400/20 to-teal-500/10 border-emerald-400/30 text-emerald-300",
@@ -198,8 +205,20 @@ function ProjectCard({ title, description, status, accent }) {
       <h3 className="mb-3 text-xl font-bold text-white">{title}</h3>
       <p className="mb-5 leading-relaxed text-slate-300">{description}</p>
 
-      <button className="font-semibold hover:text-white">View Project →</button>
-    </div>
+{link ? (
+  <a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold hover:text-white"
+  >
+    Launch App →
+  </a>
+) : (
+  <button className="font-semibold hover:text-white">
+    View Project →
+  </button>
+)}   </div>
   );
 }
 
@@ -227,4 +246,4 @@ function InfoBox({ title, text, color }) {
       <p className="text-slate-300">{text}</p>
     </div>
   );
-}
+  }
