@@ -57,21 +57,40 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
               About
             </p>
+
             <h2 className="mb-4 text-3xl font-bold">
               Science, communication, and technology in one lane.
             </h2>
+
             <p className="mb-4 leading-relaxed text-slate-300">
               My background combines biology, chemistry, anatomy, nutrition, teaching, healthcare management, entrepreneurship, and AI tool building. I’m especially interested in products that make complex ideas more accessible and useful.
             </p>
+
             <p className="leading-relaxed text-slate-300">
               This portfolio brings together my live web projects, AI learning tools, teaching resources, and early product prototypes.
             </p>
           </div>
 
           <div className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-6 shadow-2xl">
+            <div className="mb-6 flex items-center gap-4">
+              <img
+                src="/craig-headshot.png"
+                alt="Craig Gordon"
+                className="h-20 w-20 rounded-full border-2 border-cyan-300 object-cover"
+              />
+
+              <div>
+                <h3 className="text-xl font-bold text-white">Craig Gordon</h3>
+                <p className="text-sm text-cyan-300">
+                  Science Educator • AI Builder • Web Developer
+                </p>
+              </div>
+            </div>
+
             <h3 className="mb-4 text-xl font-bold text-cyan-300">
               Current Focus
             </h3>
+
             <ul className="space-y-3 text-slate-300">
               <li>• AI-powered education tools</li>
               <li>• Biology tutoring and student support apps</li>
@@ -88,7 +107,10 @@ export default function Home() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
           Featured Projects
         </p>
-        <h2 className="mb-8 text-3xl font-bold">Live builds and active prototypes</h2>
+
+        <h2 className="mb-8 text-3xl font-bold">
+          Live builds and active prototypes
+        </h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
@@ -143,7 +165,9 @@ export default function Home() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
           Project Showcase
         </p>
+
         <h2 className="mb-4 text-3xl font-bold">Biology Tutor AI</h2>
+
         <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-300">
           Biology Tutor AI is a classroom-safe tutoring chatbot designed to help students ask better questions, review difficult biology concepts, and receive clear explanations without simply being handed answers.
         </p>
@@ -174,7 +198,10 @@ export default function Home() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
           Skill Stack
         </p>
-        <h2 className="mb-8 text-3xl font-bold">Where my experience connects</h2>
+
+        <h2 className="mb-8 text-3xl font-bold">
+          Where my experience connects
+        </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
           <SkillCard
@@ -203,10 +230,13 @@ export default function Home() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
             Contact
           </p>
+
           <h2 className="mb-4 text-3xl font-bold">Let’s connect.</h2>
+
           <p className="mb-6 max-w-2xl text-slate-300">
             I’m open to roles and projects where science, communication, education, AI, and product thinking overlap.
           </p>
+
           <a
             href="mailto:Craig.James.Gordon13@gmail.com"
             className="inline-block rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
