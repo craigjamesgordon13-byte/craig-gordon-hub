@@ -57,7 +57,9 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
               About
             </p>
-            <h2 className="mb-4 text-3xl font-bold">Science, communication, and technology in one lane.</h2>
+            <h2 className="mb-4 text-3xl font-bold">
+              Science, communication, and technology in one lane.
+            </h2>
             <p className="mb-4 leading-relaxed text-slate-300">
               My background combines biology, chemistry, anatomy, nutrition, teaching, healthcare management, entrepreneurship, and AI tool building. I’m especially interested in products that make complex ideas more accessible and useful.
             </p>
@@ -67,7 +69,9 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-6 shadow-2xl">
-            <h3 className="mb-4 text-xl font-bold text-cyan-300">Current Focus</h3>
+            <h3 className="mb-4 text-xl font-bold text-cyan-300">
+              Current Focus
+            </h3>
             <ul className="space-y-3 text-slate-300">
               <li>• AI-powered education tools</li>
               <li>• Biology tutoring and student support apps</li>
@@ -106,6 +110,15 @@ export default function Home() {
           />
 
           <ProjectCard
+            title="Teaching Materials Store"
+            description="A live self-hosted science resource storefront featuring classroom-tested biology, ecology, lab safety, case studies, and AI teacher tools."
+            status="Live Store"
+            accent="emerald"
+            link="https://mad-scientist-resource-store.vercel.app"
+            buttonText="Launch Store"
+          />
+
+          <ProjectCard
             title="Stoop Dating Prototype"
             description="A polished landing page prototype for a social dating concept built around casual, real-world neighborhood connections."
             status="Live Website"
@@ -121,15 +134,6 @@ export default function Home() {
             accent="blue"
             link="https://y-six-drab-61.vercel.app/"
             buttonText="Launch Site"
-          />
-
-          <ProjectCard
-            title="Teaching Materials Store"
-            description="A self-hosted collection of biology, ecology, nutrition, and science resources built from real classroom experience."
-            status="Coming Soon"
-            accent="emerald"
-            link="#teaching-materials-store"
-            buttonText="View Project"
           />
         </div>
       </section>
@@ -161,37 +165,6 @@ export default function Home() {
             color="cyan"
             title="Status"
             text="The full backend version has been migrated from Replit to GitHub. A faster public demo version is being refined for a more professional portfolio launch."
-          />
-        </div>
-      </section>
-
-      {/* Teaching Materials Store Showcase */}
-      <section id="teaching-materials-store" className="mx-auto max-w-6xl px-6 py-16">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-emerald-300">
-          Project Showcase
-        </p>
-        <h2 className="mb-4 text-3xl font-bold">Teaching Materials Store</h2>
-        <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-300">
-          The Teaching Materials Store is a planned self-hosted library of classroom-tested science resources, including biology lessons, ecology activities, guided notes, study guides, assessments, and AI-supported learning tools.
-        </p>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          <InfoCard
-            color="emerald"
-            title="Resources"
-            text="Biology, ecology, nutrition, anatomy, guided notes, labs, quizzes, study guides, and project-based science materials."
-          />
-
-          <InfoCard
-            color="emerald"
-            title="Audience"
-            text="Teachers who want practical, polished, classroom-ready resources created by an active science educator."
-          />
-
-          <InfoCard
-            color="emerald"
-            title="Future Build"
-            text="Planned features include downloadable resources, preview pages, bundles, teacher tools, and a simple checkout system."
           />
         </div>
       </section>
