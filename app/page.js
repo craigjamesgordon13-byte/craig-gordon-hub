@@ -115,11 +115,11 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             title="Biology Tutor AI"
-            description="An AI-powered biology tutoring tool designed to help students ask questions, review concepts, and receive clear explanations."
-            status="In Development"
+            description="A live classroom-safe biology tutoring chatbot that helps students ask questions, review concepts, and study with guided explanations."
+            status="Live AI Tutor"
             accent="cyan"
-            link="#biology-tutor-ai"
-            buttonText="View Project"
+            link="https://biology-tutor-ai.vercel.app"
+            buttonText="Launch Tutor"
           />
 
           <ProjectCard
@@ -169,8 +169,19 @@ export default function Home() {
         <h2 className="mb-4 text-3xl font-bold">Biology Tutor AI</h2>
 
         <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-300">
-          Biology Tutor AI is a classroom-safe tutoring chatbot designed to help students ask better questions, review difficult biology concepts, and receive clear explanations without simply being handed answers.
+          Biology Tutor AI is a live classroom-safe tutoring chatbot designed to help students ask better questions, review difficult biology concepts, and receive clear explanations without simply being handed answers.
         </p>
+
+        <div className="mb-8">
+          <a
+            href="https://biology-tutor-ai.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+          >
+            Launch Biology Tutor AI →
+          </a>
+        </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           <InfoCard
@@ -188,7 +199,7 @@ export default function Home() {
           <InfoCard
             color="cyan"
             title="Status"
-            text="The full backend version has been migrated from Replit to GitHub. A faster public demo version is being refined for a more professional portfolio launch."
+            text="Live Vercel demo with a working AI tutor interface, green science branding, and OpenAI API connection."
           />
         </div>
       </section>
