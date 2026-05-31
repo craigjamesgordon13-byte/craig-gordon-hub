@@ -24,6 +24,13 @@ export default function Home() {
           </a>
 
           <a
+            href="#story"
+            className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+          >
+            My Story
+          </a>
+
+          <a
             href="https://www.linkedin.com/in/craig-gordon-bab4b4191"
             target="_blank"
             rel="noopener noreferrer"
@@ -98,6 +105,54 @@ export default function Home() {
               <li>• Small business website prototypes</li>
               <li>• Classroom-tested science resources</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section id="story" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-8 shadow-2xl md:p-12">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+            The Story
+          </p>
+
+          <h2 className="mb-6 max-w-4xl text-3xl font-bold md:text-4xl">
+            I’m building proof that education, AI, and science communication can move faster.
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="space-y-4 leading-relaxed text-slate-300">
+              <p>
+                My career started in the classroom, but the problems I kept seeing were bigger than one classroom. Students needed better support, teachers needed better tools, and science needed to feel more alive, relevant, and accessible.
+              </p>
+
+              <p>
+                Instead of only talking about those problems, I started building. I created AI tutoring tools, a science resource store, a career guidance app, classroom materials, and websites for real businesses.
+              </p>
+
+              <p>
+                This hub is the result of that work. It is not just a resume. It is a live collection of products, prototypes, and tools that show how I think, what I can create, and where I’m going next.
+              </p>
+
+              <p>
+                The through-line is simple: I take complex information, turn it into something usable, and build tools that help people learn, decide, or act faster.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-700 bg-slate-950 p-6">
+              <h3 className="mb-4 text-xl font-bold text-cyan-300">
+                What this portfolio shows
+              </h3>
+
+              <ul className="space-y-3 text-slate-300">
+                <li>• I can turn ideas into live deployed products.</li>
+                <li>• I can use AI practically, not just theoretically.</li>
+                <li>• I can explain complex science in student-friendly ways.</li>
+                <li>• I can build tools for education, sales, training, and small business.</li>
+                <li>• I can create products that connect content, branding, and user experience.</li>
+                <li>• I can move quickly from problem to prototype to live product.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
