@@ -188,6 +188,15 @@ export default function Home() {
           />
 
           <ProjectCard
+            title="DNA Game"
+            description="A live interactive genetics learning game where students practice DNA structure, base pairing, and molecular biology concepts through play."
+            status="Live Genetics Game"
+            accent="blue"
+            link="https://dna-game-eight.vercel.app/"
+            buttonText="Launch Game"
+          />
+
+          <ProjectCard
             title="Career Guidance App"
             description="A live AI career exploration tool that helps users compare paths, clarify goals, and generate realistic next steps."
             status="Live App"
