@@ -104,6 +104,7 @@ export default function Home() {
               <li>• Career guidance and coaching workflows</li>
               <li>• Small business website prototypes</li>
               <li>• Classroom-tested science resources</li>
+              <li>• Interactive science learning games</li>
             </ul>
           </div>
         </div>
@@ -127,7 +128,7 @@ export default function Home() {
               </p>
 
               <p>
-                Instead of only talking about those problems, I started building. I created AI tutoring tools, a science resource store, a career guidance app, classroom materials, and websites for real businesses.
+                Instead of only talking about those problems, I started building. I created AI tutoring tools, a science resource store, a career guidance app, classroom materials, interactive learning games, and websites for real businesses.
               </p>
 
               <p>
@@ -175,6 +176,15 @@ export default function Home() {
             accent="cyan"
             link="https://biology-tutor-ai.vercel.app"
             buttonText="Launch Tutor"
+          />
+
+          <ProjectCard
+            title="Population Dynamics Game"
+            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
+            status="Live Interactive Game"
+            accent="emerald"
+            link="https://population-dynamics-game.vercel.app"
+            buttonText="Launch Game"
           />
 
           <ProjectCard
@@ -259,6 +269,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Population Dynamics Game Showcase */}
+      <section id="population-dynamics-game" className="mx-auto max-w-6xl px-6 py-16">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-emerald-300">
+          Interactive Learning Game
+        </p>
+
+        <h2 className="mb-4 text-3xl font-bold">Population Dynamics Game</h2>
+
+        <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-300">
+          The Population Dynamics Game is a live interactive science tool where students can test how ecosystems change over time. It helps make carrying capacity, limiting factors, population growth, and ecological balance feel visual and playable.
+        </p>
+
+        <div className="mb-8">
+          <a
+            href="https://population-dynamics-game.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-xl bg-emerald-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-300"
+          >
+            Launch Population Dynamics Game →
+          </a>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <InfoCard
+            color="emerald"
+            title="Purpose"
+            text="Help students visualize how populations respond to environmental pressure, resource limits, carrying capacity, and ecosystem change."
+          />
+
+          <InfoCard
+            color="emerald"
+            title="Built For"
+            text="Biology and ecology classrooms studying population growth, limiting factors, predator-prey relationships, and ecosystem stability."
+          />
+
+          <InfoCard
+            color="emerald"
+            title="Status"
+            text="Live Vercel demo designed as an interactive classroom-ready prototype for ecology instruction."
+          />
+        </div>
+      </section>
+
       {/* Skills */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
@@ -284,7 +338,7 @@ export default function Home() {
 
           <SkillCard
             title="Product Thinking"
-            text="Education tools, small business websites, career apps, resource stores, user experience, and practical problem solving."
+            text="Education tools, small business websites, career apps, resource stores, interactive learning games, user experience, and practical problem solving."
             color="emerald"
           />
         </div>
