@@ -175,11 +175,18 @@ export default function Home() {
           Featured Projects
         </p>
 
-        <h2 className="mb-8 text-3xl font-bold">
+        <h2 className="mb-4 text-3xl font-bold">
           Live builds and active prototypes
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <p className="mb-10 max-w-3xl leading-relaxed text-slate-300">
+          Organized by the kind of problem each project solves: AI learning tools, classroom resources, interactive science products, tutoring services, and small business web prototypes.
+        </p>
+
+        <ProjectGroup
+          label="AI + Education Tools"
+          description="Student support, teacher workflow, and AI-powered guidance products."
+        >
           <ProjectCard
             title="Biology Tutor AI"
             description="A live classroom-safe biology tutoring chatbot that helps students ask questions, review concepts, and study with guided explanations."
@@ -190,21 +197,12 @@ export default function Home() {
           />
 
           <ProjectCard
-            title="Population Dynamics Game"
-            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
-            status="Live Interactive Game"
-            accent="emerald"
-            link="https://population-dynamics-game.vercel.app"
-            buttonText="Launch Game"
-          />
-
-          <ProjectCard
-            title="Tutoring Services"
-            description="Science tutoring and academic support for Biology, AP Biology, AP Environmental Science, Nutrition, Anatomy, and Chemistry."
-            status="Available"
-            accent="blue"
-            link={tutoringEmail}
-            buttonText="Email for Tutoring"
+            title="Mr. G Teacher Lab"
+            description="A teacher-facing AI toolkit concept for generating lesson plans, quizzes, study guides, exit tickets, CER prompts, and differentiated materials."
+            status="Next Build"
+            accent="cyan"
+            link="#teacher-lab"
+            buttonText="View Concept"
           />
 
           <ProjectCard
@@ -214,6 +212,20 @@ export default function Home() {
             accent="purple"
             link="https://career-guidance-app-rouge.vercel.app/"
             buttonText="Launch App"
+          />
+        </ProjectGroup>
+
+        <ProjectGroup
+          label="Classroom Learning + Resource Products"
+          description="Science resources, tutoring, and interactive tools built from real classroom needs."
+        >
+          <ProjectCard
+            title="Population Dynamics Game"
+            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
+            status="Live Interactive Game"
+            accent="emerald"
+            link="https://population-dynamics-game.vercel.app"
+            buttonText="Launch Game"
           />
 
           <ProjectCard
@@ -225,6 +237,20 @@ export default function Home() {
             buttonText="Launch Store"
           />
 
+          <ProjectCard
+            title="Tutoring Services"
+            description="Science tutoring and academic support for Biology, AP Biology, AP Environmental Science, Nutrition, Anatomy, and Chemistry."
+            status="Available"
+            accent="blue"
+            link={tutoringEmail}
+            buttonText="Email for Tutoring"
+          />
+        </ProjectGroup>
+
+        <ProjectGroup
+          label="Business + Web Prototypes"
+          description="Polished web builds showing branding, service presentation, and client-style landing page work."
+        >
           <ProjectCard
             title="Stoop Dating Prototype"
             description="A polished landing page prototype for a social dating concept built around casual, real-world neighborhood connections."
@@ -242,7 +268,7 @@ export default function Home() {
             link="https://y-six-drab-61.vercel.app/"
             buttonText="Launch Site"
           />
-        </div>
+        </ProjectGroup>
       </section>
 
       {/* Tutoring Services */}
@@ -304,6 +330,39 @@ export default function Home() {
               General Contact
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Teacher Lab Showcase */}
+      <section id="teacher-lab" className="mx-auto max-w-6xl px-6 py-16">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+          Next Build
+        </p>
+
+        <h2 className="mb-4 text-3xl font-bold">Mr. G Teacher Lab</h2>
+
+        <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-300">
+          Mr. G Teacher Lab is the next major build: a teacher-facing AI toolkit designed to help educators generate lesson plans, quizzes, study guides, exit tickets, CER prompts, and differentiated readings faster.
+        </p>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <InfoCard
+            color="cyan"
+            title="Purpose"
+            text="Help teachers turn topics, standards, and rough ideas into polished classroom-ready materials."
+          />
+
+          <InfoCard
+            color="cyan"
+            title="Built For"
+            text="Science teachers, curriculum creators, and educators who need quality materials without starting from scratch every time."
+          />
+
+          <InfoCard
+            color="cyan"
+            title="Status"
+            text="Planned next build and portfolio expansion project. Designed to connect AI workflow, curriculum design, and teacher productivity."
+          />
         </div>
       </section>
 
@@ -457,6 +516,21 @@ export default function Home() {
         </div>
       </section>
     </main>
+  );
+}
+
+function ProjectGroup({ label, description, children }) {
+  return (
+    <div className="mb-12">
+      <div className="mb-5">
+        <h3 className="text-2xl font-bold text-white">{label}</h3>
+        <p className="mt-2 max-w-3xl text-slate-400">{description}</p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {children}
+      </div>
+    </div>
   );
 }
 
