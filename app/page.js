@@ -1,126 +1,124 @@
 export default function Home() {
+  const tutoringEmail =
+    "mailto:Craig.James.Gordon13@gmail.com?subject=Tutoring%20Services%20Inquiry&body=Hi%20Craig%2C%0A%0AI%27m%20interested%20in%20tutoring%20services%20for%3A%0A%0AStudent%20grade%20level%3A%0ASubject%3A%0AGoals%20or%20areas%20of%20support%3A%0APreferred%20schedule%3A%0A%0AThank%20you!";
+
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       {/* Hero */}
-      <section className="mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr]">
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-cyan-300">
-            Science Educator • AI Builder • Web Project Developer
-          </p>
+      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-20">
+        <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+          Science Educator • AI Builder • Web Project Developer
+        </p>
 
-          <h1 className="mb-6 max-w-4xl text-5xl font-black leading-tight md:text-7xl">
-            Craig Gordon Hub
-          </h1>
+        <h1 className="mb-6 max-w-4xl text-5xl font-black leading-tight md:text-7xl">
+          Craig Gordon builds science learning tools, AI apps, and polished web experiences.
+        </h1>
 
-          <p className="mb-8 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
-            Science teacher, AI builder, and classroom technology creator building live tools for students, educators, and small businesses.
-          </p>
+        <p className="mb-8 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
+          I’m a biology teacher, healthcare MBA, and builder using AI, web tools, and science communication to create practical products for students, educators, and small businesses.
+        </p>
 
-          <div className="mb-8 flex max-w-4xl flex-wrap gap-3 text-sm font-semibold text-slate-300">
-            <span className="rounded-full border border-cyan-400/30 bg-slate-900/70 px-4 py-2">
-              High School Biology Teacher
-            </span>
-            <span className="rounded-full border border-cyan-400/30 bg-slate-900/70 px-4 py-2">
-              MBA
-            </span>
-            <span className="rounded-full border border-cyan-400/30 bg-slate-900/70 px-4 py-2">
-              AI Classroom Tool Builder
-            </span>
-            <span className="rounded-full border border-cyan-400/30 bg-slate-900/70 px-4 py-2">
-              Boston Public Schools
-            </span>
-          </div>
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+          >
+            View Projects
+          </a>
 
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              View Projects
-            </a>
+          <a
+            href="#story"
+            className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+          >
+            My Story
+          </a>
 
-            <a
-              href="#story"
-              className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-            >
-              My Story
-            </a>
+          <a
+            href="#tutoring"
+            className="rounded-xl border border-emerald-400/50 bg-emerald-400/10 px-6 py-3 font-semibold text-emerald-300 transition hover:border-emerald-300 hover:bg-emerald-400 hover:text-slate-950"
+          >
+            Tutoring Services
+          </a>
 
-            <a
-              href="https://www.linkedin.com/in/craig-gordon-bab4b4191"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-            >
-              LinkedIn
-            </a>
+          <a
+            href="https://www.linkedin.com/in/craig-gordon-bab4b4191"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+          >
+            LinkedIn
+          </a>
 
-            <a
-              href="/Craig-Gordon-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-            >
-              View Resume
-            </a>
+          <a
+            href="/Craig-Gordon-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+          >
+            View Resume
+          </a>
 
-            <a
-              href="mailto:Craig.James.Gordon13@gmail.com"
-              className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-
-        <div className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-6 shadow-2xl">
-          <div className="mb-6 flex items-center gap-4">
-            <img
-              src="/craig-headshot.png"
-              alt="Craig Gordon"
-              className="h-20 w-20 rounded-full border-2 border-cyan-300 object-cover"
-            />
-
-            <div>
-              <h3 className="text-xl font-bold text-white">Craig Gordon</h3>
-              <p className="text-sm text-cyan-300">
-                Science Educator • AI Builder • Web Developer
-              </p>
-            </div>
-          </div>
-
-          <h3 className="mb-4 text-xl font-bold text-cyan-300">
-            Current Focus
-          </h3>
-
-          <ul className="space-y-3 text-slate-300">
-            <li>• AI-powered education tools</li>
-            <li>• Biology tutoring and student support apps</li>
-            <li>• Career guidance and coaching workflows</li>
-            <li>• Small business website prototypes</li>
-            <li>• Classroom-tested science resources</li>
-            <li>• Interactive science learning games</li>
-          </ul>
+          <a
+            href="mailto:Craig.James.Gordon13@gmail.com"
+            className="rounded-xl border border-slate-600 bg-slate-900/60 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
+          >
+            Contact Me
+          </a>
         </div>
       </section>
 
       {/* About */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
-          About
-        </p>
+        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+              About
+            </p>
 
-        <h2 className="mb-4 text-3xl font-bold">
-          Science, communication, and technology in one lane.
-        </h2>
+            <h2 className="mb-4 text-3xl font-bold">
+              Science, communication, and technology in one lane.
+            </h2>
 
-        <p className="mb-4 max-w-4xl leading-relaxed text-slate-300">
-          My background combines biology, chemistry, anatomy, nutrition, teaching, healthcare management, entrepreneurship, and AI tool building. I’m especially interested in products that make complex ideas more accessible and useful.
-        </p>
+            <p className="mb-4 leading-relaxed text-slate-300">
+              My background combines biology, chemistry, anatomy, nutrition, teaching, healthcare management, entrepreneurship, and AI tool building. I’m especially interested in products that make complex ideas more accessible and useful.
+            </p>
 
-        <p className="max-w-4xl leading-relaxed text-slate-300">
-          This portfolio brings together my live web projects, AI learning tools, teaching resources, and early product prototypes.
-        </p>
+            <p className="leading-relaxed text-slate-300">
+              This portfolio brings together my live web projects, AI learning tools, teaching resources, tutoring services, and early product prototypes.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-6 shadow-2xl">
+            <div className="mb-6 flex items-center gap-4">
+              <img
+                src="/craig-headshot.png"
+                alt="Craig Gordon"
+                className="h-20 w-20 rounded-full border-2 border-cyan-300 object-cover"
+              />
+
+              <div>
+                <h3 className="text-xl font-bold text-white">Craig Gordon</h3>
+                <p className="text-sm text-cyan-300">
+                  Science Educator • AI Builder • Web Developer
+                </p>
+              </div>
+            </div>
+
+            <h3 className="mb-4 text-xl font-bold text-cyan-300">
+              Current Focus
+            </h3>
+
+            <ul className="space-y-3 text-slate-300">
+              <li>• AI-powered education tools</li>
+              <li>• Biology tutoring and student support apps</li>
+              <li>• Career guidance and coaching workflows</li>
+              <li>• Small business website prototypes</li>
+              <li>• Classroom-tested science resources</li>
+              <li>• Interactive science learning games</li>
+              <li>• Science tutoring and academic support</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* Story */}
@@ -181,77 +179,131 @@ export default function Home() {
           Live builds and active prototypes
         </h2>
 
-        <div className="space-y-12">
-          <ProjectGroup title="Classroom AI & Science Tools">
-            <ProjectCard
-              title="Biology Tutor AI"
-              description="A live classroom-safe biology tutoring chatbot that helps students ask questions, review concepts, and study with guided explanations."
-              status="Live AI Tutor"
-              accent="cyan"
-              link="https://biology-tutor-ai.vercel.app"
-              buttonText="Launch Tutor"
-            />
-          </ProjectGroup>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <ProjectCard
+            title="Biology Tutor AI"
+            description="A live classroom-safe biology tutoring chatbot that helps students ask questions, review concepts, and study with guided explanations."
+            status="Live AI Tutor"
+            accent="cyan"
+            link="https://biology-tutor-ai.vercel.app"
+            buttonText="Launch Tutor"
+          />
 
-          <ProjectGroup title="Education Games">
-            <ProjectCard
-              title="Population Dynamics Game"
-              description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
-              status="Live Interactive Game"
-              accent="emerald"
-              link="https://population-dynamics-game.vercel.app"
-              buttonText="Launch Game"
+          <ProjectCard
+            title="Population Dynamics Game"
+            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
+            status="Live Interactive Game"
+            accent="emerald"
+            link="https://population-dynamics-game.vercel.app"
+            buttonText="Launch Game"
+          />
+
+          <ProjectCard
+            title="Tutoring Services"
+            description="Science tutoring and academic support for Biology, AP Biology, AP Environmental Science, Nutrition, Anatomy, and Chemistry."
+            status="Available"
+            accent="blue"
+            link={tutoringEmail}
+            buttonText="Email for Tutoring"
+          />
+
+          <ProjectCard
+            title="Career Guidance App"
+            description="A live AI career exploration tool that helps users compare paths, clarify goals, and generate realistic next steps."
+            status="Live App"
+            accent="purple"
+            link="https://career-guidance-app-rouge.vercel.app/"
+            buttonText="Launch App"
+          />
+
+          <ProjectCard
+            title="Teaching Materials Store"
+            description="A live self-hosted science resource storefront featuring classroom-tested biology, ecology, lab safety, case studies, and AI teacher tools."
+            status="Live Store"
+            accent="emerald"
+            link="https://mad-scientist-resource-store.vercel.app"
+            buttonText="Launch Store"
+          />
+
+          <ProjectCard
+            title="Stoop Dating Prototype"
+            description="A polished landing page prototype for a social dating concept built around casual, real-world neighborhood connections."
+            status="Live Website"
+            accent="pink"
+            link="https://stoop-dating-prototype.vercel.app/"
+            buttonText="Launch Site"
+          />
+
+          <ProjectCard
+            title="Rivera Property Management"
+            description="A professional business website prototype built to showcase services, credibility, and client contact pathways."
+            status="Live Website"
+            accent="blue"
+            link="https://y-six-drab-61.vercel.app/"
+            buttonText="Launch Site"
+          />
+        </div>
+      </section>
+
+      {/* Tutoring Services */}
+      <section id="tutoring" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-slate-900 to-slate-800 p-8 shadow-2xl md:p-12">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-emerald-300">
+            Tutoring Services
+          </p>
+
+          <h2 className="mb-4 max-w-4xl text-3xl font-bold md:text-4xl">
+            Science tutoring built around clarity, confidence, and real understanding.
+          </h2>
+
+          <p className="mb-8 max-w-3xl text-lg leading-relaxed text-slate-300">
+            I offer tutoring and academic support for students who need help strengthening science foundations, preparing for assessments, improving confidence, or getting unstuck in challenging coursework.
+          </p>
+
+          <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <TutoringSubject subject="Biology" />
+            <TutoringSubject subject="AP Biology" />
+            <TutoringSubject subject="AP Environmental Science" />
+            <TutoringSubject subject="Nutrition" />
+            <TutoringSubject subject="Anatomy" />
+            <TutoringSubject subject="Chemistry" />
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <InfoCard
+              color="emerald"
+              title="Student-Friendly Explanations"
+              text="Support focused on breaking down complex science into clear, understandable steps."
             />
 
-            <ProjectCard
-              title="DNA Game"
-              description="A live interactive genetics learning game where students practice DNA structure, base pairing, and molecular biology concepts through play."
-              status="Live Genetics Game"
-              accent="blue"
-              link="https://dna-game-eight.vercel.app/"
-              buttonText="Launch Game"
-            />
-          </ProjectGroup>
-
-          <ProjectGroup title="Stores & Apps">
-            <ProjectCard
-              title="Teaching Materials Store"
-              description="A live self-hosted science resource storefront featuring classroom-tested biology, ecology, lab safety, case studies, and AI teacher tools."
-              status="Live Store"
-              accent="emerald"
-              link="https://mad-scientist-resource-store.vercel.app"
-              buttonText="Launch Store"
+            <InfoCard
+              color="emerald"
+              title="Study and Test Support"
+              text="Help with review, vocabulary, diagrams, practice questions, assignments, and assessment preparation."
             />
 
-            <ProjectCard
-              title="Career Guidance App"
-              description="A live AI career exploration tool that helps users compare paths, clarify goals, and generate realistic next steps."
-              status="Live App"
-              accent="purple"
-              link="https://career-guidance-app-rouge.vercel.app/"
-              buttonText="Launch App"
+            <InfoCard
+              color="emerald"
+              title="Teacher-Level Insight"
+              text="Tutoring informed by real classroom experience, curriculum design, and science teaching across multiple course levels."
             />
-          </ProjectGroup>
+          </div>
 
-          <ProjectGroup title="Client Website Prototypes">
-            <ProjectCard
-              title="Stoop Dating Prototype"
-              description="A polished landing page prototype for a social dating concept built around casual, real-world neighborhood connections."
-              status="Live Website"
-              accent="pink"
-              link="https://stoop-dating-prototype.vercel.app/"
-              buttonText="Launch Site"
-            />
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href={tutoringEmail}
+              className="rounded-xl bg-emerald-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-300"
+            >
+              Email Me About Tutoring
+            </a>
 
-            <ProjectCard
-              title="Rivera Property Management"
-              description="A professional business website prototype built to showcase services, credibility, and client contact pathways."
-              status="Live Website"
-              accent="blue"
-              link="https://y-six-drab-61.vercel.app/"
-              buttonText="Launch Site"
-            />
-          </ProjectGroup>
+            <a
+              href="mailto:Craig.James.Gordon13@gmail.com"
+              className="rounded-xl border border-slate-600 bg-slate-950/60 px-6 py-3 font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300"
+            >
+              General Contact
+            </a>
+          </div>
         </div>
       </section>
 
@@ -368,7 +420,7 @@ export default function Home() {
 
           <SkillCard
             title="Product Thinking"
-            text="Education tools, small business websites, career apps, resource stores, interactive learning games, user experience, and practical problem solving."
+            text="Education tools, tutoring services, small business websites, career apps, resource stores, interactive learning games, user experience, and practical problem solving."
             color="emerald"
           />
         </div>
@@ -384,15 +436,24 @@ export default function Home() {
           <h2 className="mb-4 text-3xl font-bold">Let’s connect.</h2>
 
           <p className="mb-6 max-w-2xl text-slate-300">
-            I’m open to roles and projects where science, communication, education, AI, and product thinking overlap.
+            I’m open to roles and projects where science, communication, education, AI, tutoring, and product thinking overlap.
           </p>
 
-          <a
-            href="mailto:Craig.James.Gordon13@gmail.com"
-            className="inline-block rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-          >
-            Email Me
-          </a>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="mailto:Craig.James.Gordon13@gmail.com"
+              className="inline-block rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              Email Me
+            </a>
+
+            <a
+              href={tutoringEmail}
+              className="inline-block rounded-xl border border-emerald-400/40 bg-emerald-400/10 px-6 py-3 font-semibold text-emerald-300 transition hover:bg-emerald-400 hover:text-slate-950"
+            >
+              Ask About Tutoring
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -434,15 +495,6 @@ function ProjectCard({ title, description, status, accent, link, buttonText = "V
   );
 }
 
-function ProjectGroup({ title, children }) {
-  return (
-    <div>
-      <h3 className="mb-4 text-xl font-bold text-white">{title}</h3>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{children}</div>
-    </div>
-  );
-}
-
 function InfoCard({ title, text, color }) {
   const colors = {
     cyan: "border-cyan-400/30",
@@ -471,6 +523,14 @@ function SkillCard({ title, text, color }) {
     <div className={`rounded-2xl border bg-slate-800/80 p-5 ${colors[color]}`}>
       <h3 className="mb-2 font-semibold">{title}</h3>
       <p className="text-slate-300">{text}</p>
+    </div>
+  );
+}
+
+function TutoringSubject({ subject }) {
+  return (
+    <div className="rounded-2xl border border-emerald-400/20 bg-slate-950/70 p-5 text-center">
+      <p className="font-semibold text-emerald-300">{subject}</p>
     </div>
   );
 }
