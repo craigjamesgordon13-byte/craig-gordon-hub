@@ -220,12 +220,12 @@ export default function Home() {
           description="Science resources, tutoring, and interactive tools built from real classroom needs."
         >
           <ProjectCard
-            title="Population Dynamics Game"
-            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
-            status="Live Interactive Game"
-            accent="emerald"
-            link="https://population-dynamics-game.vercel.app"
-            buttonText="Launch Game"
+            title="Nutrient Detectives Lab"
+            description="A classroom-ready biology simulation where students test mystery food samples for sugars, starches, proteins, and lipids using nutrient indicator evidence."
+            status="Live Nutrition Lab"
+            accent="blue"
+            link="https://nutrientdetectiveslab.vercel.app/"
+            buttonText="Launch Lab"
           />
 
           <ProjectCard
@@ -244,6 +244,15 @@ export default function Home() {
             accent="blue"
             link={tutoringEmail}
             buttonText="Email for Tutoring"
+          />
+
+          <ProjectCard
+            title="Population Dynamics Game"
+            description="A live interactive ecology game where students explore population growth, carrying capacity, limiting factors, and ecosystem change through adjustable variables."
+            status="Live Interactive Game"
+            accent="emerald"
+            link="https://population-dynamics-game.vercel.app"
+            buttonText="Launch Game"
           />
         </ProjectGroup>
 
